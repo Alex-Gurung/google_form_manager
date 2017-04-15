@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+
+    "name": "Google Form Manager",
+    "description": "Save google forms, shift+l to save, shift+m to refill",
+    "version": "0.1",
+    "content_scripts": [{
+        "matches": [ //Not international
+            "*://*/*"
+        ],
+        "js": [
+            "pull_data.js"
+        ],
+        "run_at": "document_end"
+    }],
+    "permissions": [ //Probably excessive
+        "http://*/*",
+        "https://*/*"
+        // "storage"
+    ]
+}
