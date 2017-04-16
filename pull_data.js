@@ -36,13 +36,15 @@ q;m._is_array_in_array_sorted=C;-1!==navigator.userAgent.indexOf("Mac OS X")&&(o
 
 var listener = new window.keypress.Listener();
 const temp_html = document.body.innerHTML;
-listener.simple_combo("shift l", function() {
+listener.simple_combo("ctrl s", function() {
     console.log("Getting data...");
     pull_data();
     console.log("Got!");
+    alert('Saved data!');
 });
-listener.simple_combo("shift m", function() {
+listener.simple_combo("ctrl x", function() {
     get_data();
+    alert('Pulled data!');
     // location.reload()
 });
 // function undo() {
