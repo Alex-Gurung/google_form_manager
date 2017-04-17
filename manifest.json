@@ -2,11 +2,11 @@
     "manifest_version": 2,
 
     "name": "Google Form Manager",
-    "description": "Save google forms, ctrl+s to save, ctrl+m to refill",
+    "description": "Save google forms, ctrl+s to save, ctrl+x to refill",
     "version": "0.1",
     "content_scripts": [{
         "matches": [ //Not international
-            "*://*/*"
+            "*://docs.google.com/*"
         ],
         "js": [
             "pull_data.js"
